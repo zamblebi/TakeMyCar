@@ -1,0 +1,11 @@
+{
+    "name": "samuel/take-my-car",
+    "description": "TakeMyCar project",
+    "authors": [
+        {
+            "name": "Samuel Bouye Zamble",
+            "email": "bouyesamuel@gmail.com"
+        }
+    ],
+    "require": {}
+}
