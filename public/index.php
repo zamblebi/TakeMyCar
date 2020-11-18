@@ -1,15 +1,20 @@
 <?php
 require '../vendor/autoload.php';
+
+$whoops = new \Whoops\Run;
+$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler);
+$whoops->register();
+
+
 $router = new AltoRouter();
 
 
 $router->map('GET','/', function(){
-    require '../src/views/home.php';
+    require '../Views/home.php';
 }, 'home');
 
 $router->map('GET','/about', function(){
-    // require __DIR__ . '../views/home.php';
-     echo "about page";
+    require '../Views/about.php';
 }, 'about');
 
 
@@ -23,4 +28,5 @@ if ($match && is_callable($match['target'])) {
 }else {
 	// no route was matched
     header($_SERVER["SERVER_PROTOCOL"] . ' 404 Not Found');
+    echo "404 page not found";
 }

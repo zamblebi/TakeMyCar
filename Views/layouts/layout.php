@@ -92,7 +92,7 @@
     </div>
   </section> -->
 
-      <?php echo $content ?>
+      <?php echo $content; ?>
 
 <!-- <div class="album py-5 bg-light">
     <div class="container">
