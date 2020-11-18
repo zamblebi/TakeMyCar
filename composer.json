@@ -10,5 +10,9 @@
     "autoload": {
         "psr-4": {"App\\" : "src/"}
     },
-    "require": {}
+    "require": {
+        "altorouter/altorouter": "^2.0",
+        "symfony/var-dumper": "^5.1",
+        "filp/whoops": "^2.9"
+    }
 }
